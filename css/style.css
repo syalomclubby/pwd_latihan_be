@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #3E2C23;
+    color: white;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header p {
+    margin-top: 2px;
+    margin-bottom: 50px;
+}
+
+section {
+    margin: 100px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+}
+
+.card {
+    width: 300px;
+}

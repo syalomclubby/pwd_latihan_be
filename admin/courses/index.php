@@ -6,7 +6,7 @@ $sql = "SELECT * FROM courses";
 $query = mysqli_query($conn, $sql);
 ?>
 
-<table>
+<table border="1">
     <thead>
         <tr>
             <th>No</th>
@@ -17,12 +17,23 @@ $query = mysqli_query($conn, $sql);
         </tr>
     </thead>
     <tbody>
+        <?php
+            $no = 1;
+        while($result = mysqli_fetch_array($query)){
+            $name = $result['name'];
+            $description = $result['description'];
+            $price = $result['price'];
+        ?>
         <tr>
-            <td>&nbsp;</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><?= $no ?></td>
+            <td><?= $name ?></td>
+            <td><?= $description ?></td>
+            <td><?= $price ?></td>
             <td>edit | delete</td>
         </tr>
+        <?php
+            $no++;
+        }
+        ?>
     </tbody>
 </table>

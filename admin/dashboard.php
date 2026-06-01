@@ -1,8 +1,6 @@
 <?php
 include 'security.php';
 
-$username = $_SESSION['username'];
-
 echo "welcome, ".$username;
 ?>
 <br>

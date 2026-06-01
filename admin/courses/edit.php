@@ -23,6 +23,7 @@ if (!$data) {
 <html>
 <head>
     <title>Edit Course</title>
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
 

@@ -27,6 +27,7 @@ if (isset($_POST['simpan'])) {
 <html>
 <head>
     <title>Tambah Course</title>
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
 

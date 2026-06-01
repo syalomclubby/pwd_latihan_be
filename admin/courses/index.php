@@ -26,6 +26,7 @@ $query = mysqli_query($conn, $sql);
             $name = $result['name'];
             $description = $result['description'];
             $price = $result['price'];
+            $id = $result['id'];
         ?>
         <tr>
             <td><?= $no ?></td>

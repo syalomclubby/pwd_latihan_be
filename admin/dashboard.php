@@ -22,6 +22,12 @@ include 'security.php';
         </div>
 
         <div class="card">
+            <h3>Manajemen Pendaftaran</h3>
+            <p>Kelola data registrasi yang tersedia.</p>
+            <a href="registrations/index.php">Kelola Pendaftaran</a>
+        </div>
+
+        <div class="card">
             <h3>Akun</h3>
             <p>Keluar dari sistem admin.</p>
             <a href="logout.php">Logout</a>

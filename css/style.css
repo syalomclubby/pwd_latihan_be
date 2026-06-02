@@ -20,6 +20,14 @@ section {
   border-radius: 10px;
 }
 
+section.regis {
+  max-width: 1600px;
+  margin: 25px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
 .cards {
   display: flex;
   gap: 15px;
@@ -96,7 +104,7 @@ form {
   max-width: 1000px;
   margin: 0 auto 25px;
   background: white;
-  padding: 25px;
+  padding: 25px 25px 0 25px;
   border-radius: 10px;
 }
 

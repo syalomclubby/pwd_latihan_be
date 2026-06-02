@@ -12,7 +12,7 @@ include 'security.php';
 <section>
     <h1>Dashboard Admin</h1>
 
-    <p>Welcome, <strong><?= $username; ?></strong></p>
+    <p>Welcome, <strong><?= $_SESSION['username']; ?></strong></p>
 
     <div class="cards">
         <div class="card">

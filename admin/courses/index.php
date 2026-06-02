@@ -36,22 +36,27 @@ $query = mysqli_query($conn, $sql);
         <tbody>
 
         <?php
-        $no = 1;
-
+            $no = 1;
         while($result = mysqli_fetch_array($query)){
+            $name = $result['name'];
+            $description = $result['description'];
+            $price = $result['price'];
             $id = $result['id'];
         ?>
             <tr>
-                <td><?= $no++; ?></td>
-                <td><?= $result['name']; ?></td>
-                <td><?= $result['description']; ?></td>
-                <td><?= $result['price']; ?></td>
+                <td><?= $no; ?></td>
+                <td><?= $name; ?></td>
+                <td><?= $description; ?></td>
+                <td><?= $price; ?></td>
                 <td>
                     <a href="edit.php?id=<?= $id; ?>">Edit</a> |
-                    <a href="hapus.php?id=<?= $id; ?>">Hapus</a>
+                    <a href="hapus.php?id=<?= $id; ?>" onclick="return confirm('Yakin ingin menghapus data ini?')">Hapus</a>
                 </td>
             </tr>
-        <?php } ?>
+        <?php 
+            $no++;
+        }
+        ?>
 
         </tbody>
     </table>
